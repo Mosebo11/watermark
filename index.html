@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Tsepe Mosebo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Watermark -->
+  <div class="watermark">Tsepe Mosebo</div>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Tsepe Mosebo</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="btn">Toggle Accent</button>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section id="hero" class="card hero">
+      <h2>Hello — I'm Tsepe</h2>
+      <p class="lead">A software enthusiast who enjoys building useful, beautiful web tools and learning new technologies.</p>
+      <p><a class="cta" href="#contact">Get in touch →</a></p>
+    </section>
+
+    <section id="about" class="card">
+      <h3>About Me</h3>
+      <p>I hold a BSc (Hons) in Software Engineering with Multimedia. I build web apps, teach tech, and enjoy data analytics and AI projects. I love turning ideas into simple, reliable software.</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h3>Skills</h3>
+      <ul class="skills-list">
+        <li>HTML • CSS • JavaScript</li>
+        <li>PHP, MySQL</li>
+        <li>Python • Data Analytics • Machine Learning basics</li>
+        <li>React + Tailwind (learning & building)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:mosebots11@gmail.com">mosebots11@gmail.com</a></p>
+      <p>Phone/WhatsApp: (+266) 5998 1177</p>
+      <form id="contactForm" class="contact-form" onsubmit="return handleSubmit(event)">
+        <label>
+          Your name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+      <div id="msg" class="msg" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Tsepe Mosebo — Motsekuoa Community Crafters</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
